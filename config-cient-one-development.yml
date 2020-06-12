@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: create-drop
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: 12345
+  jackson:
+    date-format: dd-MM-yyyy
